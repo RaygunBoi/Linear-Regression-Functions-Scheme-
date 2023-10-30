@@ -149,7 +149,13 @@
 ; Extra Credit placeholder
 
 (define (apply-regression sat gpa test)
-    0.0000000001); Make sure to concatenate your stats.scm to this file
+    (map 
+        (lambda (x) 
+            (/ (round (* (expt 10 4) (+ (* x (regressiona sat gpa)) (regressionb sat gpa)))) (expt 10 4))
+        )
+        test
+    )
+); Make sure to concatenate your stats.scm to this file
 ; Instructions:
 ; cat stats.scm test.scm > mytest.scm
 ; Then run:
