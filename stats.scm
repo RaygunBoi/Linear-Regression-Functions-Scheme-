@@ -146,8 +146,6 @@
     )
 )
 
-; Extra Credit placeholder
-
 (define (apply-regression sat gpa test)
     (map 
         (lambda (x) ;lambda function that goes through each value in test (x) and applies the linear regression equation to each value by using lists sat and gpa to find a and b
